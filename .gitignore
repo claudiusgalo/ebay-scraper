@@ -1,0 +1,22 @@
+cat > .gitignore <<'EOF'
+# editor cruft
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# build / cache artefacts
+result/
+.direnv/
+__pycache__/
+*.egg-info/
+
+# Nix
+*.drv
+*.lock
+.nix-gc-roots/
+
+# Python virtual envs
+.venv/
+EOF
+
